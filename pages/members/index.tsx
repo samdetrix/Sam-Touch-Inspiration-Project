@@ -188,7 +188,7 @@ const Members: NextPage = () => {
       },
       toolbar: {
         search: "Search",
-        downloadCsv: "Download Loans Excel List",
+        downloadCsv: "Download Members Excel List",
         print: "Print members",
         viewColumns: "View Columns",
         filterTable: "Filter Table",
