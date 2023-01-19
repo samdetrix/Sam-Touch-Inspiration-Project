@@ -59,7 +59,7 @@ export default function Member() {
         };
        
         axios.put(
-            `https://touchinspiration-0ada.restdb.io/rest/sample/${member._id}`,
+            `https://us-central1-ti-reactjs-test.cloudfunctions.net/app/api/user/${member._id}`,
             payload,
               {
                 headers: {
@@ -145,7 +145,7 @@ export default function Member() {
         
           axios
             .get(
-              `https://touchinspiration-0ada.restdb.io/rest/sample/${_id}`,
+              `https://us-central1-ti-reactjs-test.cloudfunctions.net/app/api/user/${_id}`,
               {
                 headers: {
                     'Content-Type': 'application/json',
@@ -155,6 +155,7 @@ export default function Member() {
             )
             .then((res: any) => {
               setMember(res.data);
+              console.log(res.data);
               
             })
             .catch((err: any) => {

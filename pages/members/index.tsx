@@ -15,8 +15,9 @@ const Members: NextPage = () => {
 
   const getMembers = async () => {
     try {
+      
       const response = await axios.get(
-        `https://touchinspiration-0ada.restdb.io/rest/sample`,
+        `https://us-central1-ti-reactjs-test.cloudfunctions.net/app/api/users`,
         {
           headers: {
             "Content-Type": "application/json",
